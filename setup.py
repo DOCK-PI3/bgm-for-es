@@ -25,5 +25,5 @@ setup(
     test_suite='setup.get_test_suite',
     data_files=[('/lib/systemd/system', ['service/bgm.service']),
                 ('/etc', ['cfg/bgmconfig.ini']),
-                ('/home/pi/RetroPie/roms/music', ['extra/PLACE_YOUR_MUSIC_HERE'])]
+                ('/home/pi/MasOS/roms/music', ['extra/PLACE_YOUR_MUSIC_HERE'])]
 )
