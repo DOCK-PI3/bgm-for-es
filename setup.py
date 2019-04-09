@@ -9,14 +9,14 @@ def get_test_suite():
 
 setup(
     name='es-bgm',
-    version='1.0.1',
+    version='1.5.1',
     packages=['bgm'],
     url='',
     license='GPL',
     package_data={'bgm': ['bgmconfig.ini']},
-    author='David Jimenez',
-    author_email='davigetto@gmail.com',
-    description='Allows you to add background music to EmulationStation',
+    author='DOCK.PI3',
+    author_email='DOCK.PI3@gmail.com',
+    description='Adaptado para MasOS ,MUSICA DE FONDO PARA EmulationStation',
     requires=['mock', 'pytest'],
     entry_points=
     {'console_scripts':
@@ -25,5 +25,5 @@ setup(
     test_suite='setup.get_test_suite',
     data_files=[('/lib/systemd/system', ['service/bgm.service']),
                 ('/etc', ['cfg/bgmconfig.ini']),
-                ('/home/pi/MasOS/roms/music', ['extra/PLACE_YOUR_MUSIC_HERE'])]
+                ('/home/pi/MasOS/roms/music', ['extra/COPIAR_MUSICA_AQUI'])]
 )

@@ -179,7 +179,7 @@ class BgmShould(TestCase):
         def build(self):
             default_config = {
                 "startdelay": 0,
-                "musicdir": '/home/pi/RetroPie/music',
+                "musicdir": '/home/pi/MasOS/music',
                 "restart": self.restart,
                 "startsong": ""
             }
@@ -192,9 +192,9 @@ class BgmShould(TestCase):
 
         def assertASongFromTheDirectoryIsBeingPlayed(self, test):
             args, kwargs = self.musicPlayer.play_song.call_args
-            test.assertTrue(args[0] in [os.path.join('/home/pi/RetroPie/music', 'file1.ogg'),
-                                        os.path.join('/home/pi/RetroPie/music', 'file2.ogg'),
-                                        os.path.join('/home/pi/RetroPie/music', 'file3.ogg')])
+            test.assertTrue(args[0] in [os.path.join('/home/pi/MasOS/music', 'file1.ogg'),
+                                        os.path.join('/home/pi/MasOS/music', 'file2.ogg'),
+                                        os.path.join('/home/pi/MasOS/music', 'file3.ogg')])
             self.musicPlayer.play_song.assert_called_once()
 
         def assertMusicHasFadeDown(self, pause):

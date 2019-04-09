@@ -44,13 +44,13 @@ class MusicStateMachine:
         self._song_queue = self._get_random_queue()
 
         self._emulationstation_procname = forced_es_process or "emulationstatio"
-        self._emulator_names = forced_emulators or ["retroarch", "ags", "uae4all2", "uae4arm", "capricerpi", "linapple", "hatari", "stella",
-                              "atari800", "xroar", "vice", "daphne", "reicast", "pifba", "osmose", "gpsp", "jzintv",
-                              "basiliskll", "mame", "advmame", "dgen", "openmsx", "mupen64plus", "gngeo", "dosbox",
-                              "ppsspp", "simcoupe", "scummvm", "snes9x", "pisnes", "frotz", "fbzx", "fuse", "gemrb",
-                              "cgenesis", "zdoom", "eduke32", "lincity", "love", "kodi", "alephone", "micropolis",
-                                                    "openbor", "openttd", "opentyrian", "cannonball", "tyrquake", "ioquake3", "residualvm",
-                                                    "xrick", "sdlpop", "uqm", "stratagus", "wolf4sdl", "solarus"]
+        self._emulator_names = forced_emulators or ["retroarch", "ags", "advmame", "amiberry", "coolcv", "uae4all2", "uae4arm", "capricerpi", "linapple", "hatari", "stella",
+                              "atari800", "xroar", "vice", "dolphin", "daphne", "gearboy", "kat5200", "reicast", "pifba", "osmose", "gpsp", "jzintv",
+                              "solarus_run", "basiliskll", "mame", "mame4all", "minivmac", "drastic", "dgen", "openmsx", "mupen64plus", "gngeo", "dosbox", "dosbox-sdl2",
+                              "zelda_roth_se", "ppsspp", "simcoupe", "np2", "pcsx2", "oricutron", "scummvm", "snes9x", "pisnes", "frotz", "fbzx", "fuse", "fs-uae", "gemrb",
+                              "zsxd", "zsdx", "cgenesis", "zdoom", "pcsx", "pokemini", "px68k", "quasi88", "eduke32", "lincity", "love", "kodi", "alephone", "micropolis",
+                              "openbor", "openttd", "rpix86", "sdltrs", "ti99sim", "uae4all", "opentyrian", "cannonball", "tyrquake", "quake3", "ioquake3.arm", "residualvm",
+                              "xrick", "sdlpop", "xm7", "zesarux", "uqm", "stratagus", "wolf4sdl", "ports", "chromium", "gamemaker", "MalditaCastilla", "retropie", "solarus"]
 
         self._transitionTable = {
             MusicState.paused: [
