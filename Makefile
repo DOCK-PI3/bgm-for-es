@@ -1,7 +1,7 @@
 .ONESHELL:
 debian-package:
 	python setup.py --command-packages=stdeb.command sdist_dsc
-	cd deb_dist/es-bgm-*
+	cd /home/pi/es-bgm-*
 
 	cp ../../DEBIAN/postinst debian/
 	cp ../../DEBIAN/postrm debian/
